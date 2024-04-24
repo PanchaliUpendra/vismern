@@ -12,7 +12,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import Footer from '../Footer/Footer';
 
 //importing facilities
-import academics from './Facilities/academics.jpg';
+// import academics from './Facilities/academics.jpg';
 import art from './Facilities/art.jpg';
 import busfacility from './Facilities/busfacility.jpg';
 import csr from './Facilities/csr.jpg';
@@ -105,13 +105,13 @@ function Facilities(){
                         <h1>Sports</h1>
                         <p>Best CBSE schools with courts and grounds for every sport a child wants to engage in.</p>
                     </div>
-                    <div className='facilities-meru-con-each'>
+                    {/* <div className='facilities-meru-con-each'>
                         <div className='facilities-meru-con-each-inner'>
                             <img src={academics} alt='academics'/>
                         </div>
                         <h1>Academics</h1>
                         <p>Vivekananda International School boasts state-of-the-art classrooms and fully-equipped laboratories dedicated to fostering the academic advancement of its students.</p>
-                    </div>
+                    </div> */}
                     <div className='facilities-meru-con-each'>
                         <div className='facilities-meru-con-each-inner'>
                             <img src={art} alt='art'/>

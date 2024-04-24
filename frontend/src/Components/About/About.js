@@ -114,8 +114,8 @@ function About(){
                     <h1>Message From Chairman</h1>
                     <img src={cm1} alt='cm1'/>
                     <h3>Dr. Koradala Naresh</h3>
-                    <p>Dr. Koradala Naresh, a distinguished academician and visionary leader, serves as the Director of 
-                        vanitha  Degree College. With a  profound commitment to education and a wealth 
+                    <p>Dr. Koradala Naresh, a distinguished academician and visionary leader, serves as the Director of Vivekananda Degree& P.G College, Sanghamitra Degree & P.G College and
+                        vanita  Women's  College. With a  profound commitment to education and a wealth 
                         of experience, Dr. Naresh has been instrumental in shaping the college’s ethos 
                         and fostering an environment of academic excellence. Guided by a vision of 
                         empowering students with knowledge and skills that transcend conventional 
@@ -137,18 +137,18 @@ function About(){
                 </div>
             </div>
             {/* principle Name */}
-            <div className='principal-name'>
+            {/* <div className='principal-name'>
                 <h1>Principal's Message</h1>
                 <div className='principal-para'>
                     <p>We endeavour to promote a classroom of thinkers who would have the courage and conviction to lead the world with their astute insight, 
                         competency, calibre and impeccable values. The School’s commitment to broaden the students’ horizons and enable them to carve an integrated 
                         and an enlightened world- a world that fosters unity yet celebrates the uniqueness of each individual. May this sapling grow into a sturdy 
                         tree and spread its branche</p>
-                    {/* <div className='principal-para-img'>
+                    {<div className='principal-para-img'>
                          <img src={Principle} alt='principle'/>
-                    </div> */}
+                    </div> }
                 </div>
-            </div>
+            </div> */}
 
             <Footer/>
         </>

@@ -6,14 +6,14 @@ import Footer from '../Footer/Footer';
 
 // image gallery
 import g1 from './Galleryasset/g1.jpg';
-import g2 from './Galleryasset/g2.jpg';
+// import g2 from './Galleryasset/g2.jpg';
 import g3 from './Galleryasset/g3.jpg';
 import g4 from './Galleryasset/g4.jpg';
-import g5 from './Galleryasset/g5.jpg';
-import g6 from './Galleryasset/g6.jpg';
+// import g5 from './Galleryasset/g5.jpg';
+// import g6 from './Galleryasset/g6.jpg';
 import g7 from './Galleryasset/g7.jpg';
 import g8 from './Galleryasset/g8.jpg';
-import g9 from './Galleryasset/g9.jpg';
+// import g9 from './Galleryasset/g9.jpg';
 import g10 from './Galleryasset/g10.jpg';
 
 function Gallery(){
@@ -52,30 +52,30 @@ function Gallery(){
                         <div className='gallery-img-inner-item'>
                             <img src={g1} alt="gallery-pics"/>
                         </div>
-                        <div className='gallery-img-inner-item'>
+                        {/* <div className='gallery-img-inner-item'>
                             <img src={g2} alt="gallery-pics"/>
-                        </div>
+                        </div> */}
                         <div className='gallery-img-inner-item'>
                             <img src={g3} alt="gallery-pics"/>
                         </div>
                         <div className='gallery-img-inner-item'>
                             <img src={g4} alt="gallery-pics"/>
                         </div>
-                        <div className='gallery-img-inner-item'>
+                        {/* <div className='gallery-img-inner-item'>
                             <img src={g5} alt="gallery-pics"/>
-                        </div>
-                        <div className='gallery-img-inner-item'>
+                        </div> */}
+                        {/* <div className='gallery-img-inner-item'>
                             <img src={g6} alt="gallery-pics"/>
-                        </div>
+                        </div> */}
                         <div className='gallery-img-inner-item'>
                             <img src={g7} alt="gallery-pics"/>
                         </div>
                         <div className='gallery-img-inner-item'>
                             <img src={g8} alt="gallery-pics"/>
                         </div>
-                        <div className='gallery-img-inner-item'>
+                        {/* <div className='gallery-img-inner-item'>
                             <img src={g9} alt="gallery-pics"/>
-                        </div>
+                        </div> */}
                         <div className='gallery-img-inner-item'>
                             <img src={g10} alt="gallery-pics"/>
                         </div>

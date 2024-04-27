@@ -16,6 +16,21 @@ import g8 from './Galleryasset/g8.jpg';
 // import g9 from './Galleryasset/g9.jpg';
 import g10 from './Galleryasset/g10.jpg';
 
+import e1 from './Galleryasset/e1.jpg';
+import e2 from './Galleryasset/e2.jpg';
+import e3 from './Galleryasset/e3.jpg';
+import e4 from './Galleryasset/e4.jpg';
+import e5 from './Galleryasset/e5.jpg';
+import e6 from './Galleryasset/e6.jpg';
+import e7 from './Galleryasset/e7.jpg';
+import e8 from './Galleryasset/e8.jpg';
+import e9 from './Galleryasset/e9.jpg';
+import e10 from './Galleryasset/e10.jpg';
+import e11 from './Galleryasset/e11.jpg';
+import e12 from './Galleryasset/e12.jpg';
+import e13 from './Galleryasset/e13.jpg';
+import e14 from './Galleryasset/e14.jpg';
+
 function Gallery(){
     const [cptovdo,setcptovdo] = useState(false);
     useEffect(()=>{
@@ -79,6 +94,48 @@ function Gallery(){
                         <div className='gallery-img-inner-item'>
                             <img src={g10} alt="gallery-pics"/>
                         </div>
+                        <div className='gallery-img-inner-item'>
+                        <img src={e1} alt="gallery-pics"/>
+                    </div>
+                    <div className='gallery-img-inner-item'>
+                        <img src={e2} alt="gallery-pics"/>
+                    </div>
+                    <div className='gallery-img-inner-item'>
+                        <img src={e3} alt="gallery-pics"/>
+                    </div>
+                    <div className='gallery-img-inner-item'>
+                        <img src={e4} alt="gallery-pics"/>
+                    </div>
+                    <div className='gallery-img-inner-item'>
+                        <img src={e5} alt="gallery-pics"/>
+                    </div>
+                    <div className='gallery-img-inner-item'>
+                        <img src={e6} alt="gallery-pics"/>
+                    </div>
+                    <div className='gallery-img-inner-item'>
+                        <img src={e7} alt="gallery-pics"/>
+                    </div>
+                    <div className='gallery-img-inner-item'>
+                        <img src={e8} alt="gallery-pics"/>
+                    </div>
+                    <div className='gallery-img-inner-item'>
+                        <img src={e9} alt="gallery-pics"/>
+                    </div>
+                    <div className='gallery-img-inner-item'>
+                        <img src={e10} alt="gallery-pics"/>
+                    </div>
+                    <div className='gallery-img-inner-item'>
+                        <img src={e11} alt="gallery-pics"/>
+                    </div>
+                    <div className='gallery-img-inner-item'>
+                        <img src={e12} alt="gallery-pics"/>
+                    </div>
+                    <div className='gallery-img-inner-item'>
+                        <img src={e13} alt="gallery-pics"/>
+                    </div>
+                    <div className='gallery-img-inner-item'>
+                        <img src={e14} alt="gallery-pics"/>
+                    </div>
                         </Masonry>
                     </ResponsiveMasonry>:
                     <ResponsiveMasonry
@@ -97,24 +154,7 @@ function Gallery(){
                     <div className='gallery-img-inner-item'>
                     <iframe  src="https://www.youtube.com/embed/l62SIcbCPwo?si=ZqQApQtQ1EQcRBpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </div>
-                    {/* <div className='gallery-img-inner-item'>
-                        <img src={g5} alt="gallery-pics"/>
-                    </div>
-                    <div className='gallery-img-inner-item'>
-                        <img src={g6} alt="gallery-pics"/>
-                    </div>
-                    <div className='gallery-img-inner-item'>
-                        <img src={g7} alt="gallery-pics"/>
-                    </div>
-                    <div className='gallery-img-inner-item'>
-                        <img src={g8} alt="gallery-pics"/>
-                    </div>
-                    <div className='gallery-img-inner-item'>
-                        <img src={g9} alt="gallery-pics"/>
-                    </div>
-                    <div className='gallery-img-inner-item'>
-                        <img src={g10} alt="gallery-pics"/>
-                    </div> */}
+                    
                     </Masonry>
                 </ResponsiveMasonry>
                         }

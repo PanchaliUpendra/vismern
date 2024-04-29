@@ -13,6 +13,7 @@ import Error from './Components/Error/Error';
 import Faq from './Components/FAQ/Faq';
 import Facilities from './Components/Facilities/Facilities';
 import Career from './Components/Career/Career';
+import Login from './Components/Login/Login';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
       <Route path='/facilities' element={<Facilities/>}/>
       <Route path='/*' element={<Error/>}/>
       <Route path='/careers' element={<Career/>}/>
+      <Route path='/login' element={<Login/>}/>
     </Routes>
     </BrowserRouter>
   );

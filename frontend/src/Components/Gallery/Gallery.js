@@ -2,6 +2,7 @@ import React,{useEffect, useState} from 'react';
 import './Gallery.css';
 import Promo from './Galleryasset/promo.mp4';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
+import Backdrop from '@mui/material/Backdrop';
 import Footer from '../Footer/Footer';
 
 // image gallery
@@ -33,6 +34,8 @@ import e14 from './Galleryasset/e14.jpg';
 
 function Gallery(){
     const [cptovdo,setcptovdo] = useState(false);
+    const [images,setimages] = useState('');
+    const [open, setOpen] = useState(false);
     useEffect(()=>{
         window.scrollTo({top:0,behavior:'instant'});
     },[]);
@@ -65,16 +68,25 @@ function Gallery(){
                     >
                         <Masonry>
                         <div className='gallery-img-inner-item'>
-                            <img src={g1} alt="gallery-pics"/>
+                            <img src={g1} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(g1);
+                                }}/>
                         </div>
                         {/* <div className='gallery-img-inner-item'>
                             <img src={g2} alt="gallery-pics"/>
                         </div> */}
                         <div className='gallery-img-inner-item'>
-                            <img src={g3} alt="gallery-pics"/>
+                            <img src={g3} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(g3);
+                                }}/>
                         </div>
                         <div className='gallery-img-inner-item'>
-                            <img src={g4} alt="gallery-pics"/>
+                            <img src={g4} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(g4);
+                                }}/>
                         </div>
                         {/* <div className='gallery-img-inner-item'>
                             <img src={g5} alt="gallery-pics"/>
@@ -83,58 +95,109 @@ function Gallery(){
                             <img src={g6} alt="gallery-pics"/>
                         </div> */}
                         <div className='gallery-img-inner-item'>
-                            <img src={g7} alt="gallery-pics"/>
+                            <img src={g7} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(g7);
+                                }}/>
                         </div>
                         <div className='gallery-img-inner-item'>
-                            <img src={g8} alt="gallery-pics"/>
+                            <img src={g8} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(g8);
+                                }}/>
                         </div>
                         {/* <div className='gallery-img-inner-item'>
                             <img src={g9} alt="gallery-pics"/>
                         </div> */}
                         <div className='gallery-img-inner-item'>
-                            <img src={g10} alt="gallery-pics"/>
+                            <img src={g10} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(g10);
+                                }}/>
                         </div>
                         <div className='gallery-img-inner-item'>
-                        <img src={e1} alt="gallery-pics"/>
+                        <img src={e1} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(e1);
+                                }}/>
                     </div>
                     <div className='gallery-img-inner-item'>
-                        <img src={e2} alt="gallery-pics"/>
+                        <img src={e2} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(e2);
+                                }}/>
                     </div>
                     <div className='gallery-img-inner-item'>
-                        <img src={e3} alt="gallery-pics"/>
+                        <img src={e3} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(e3);
+                                }}/>
                     </div>
                     <div className='gallery-img-inner-item'>
-                        <img src={e4} alt="gallery-pics"/>
+                        <img src={e4} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(e4);
+                                }}/>
                     </div>
                     <div className='gallery-img-inner-item'>
-                        <img src={e5} alt="gallery-pics"/>
+                        <img src={e5} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(e5);
+                                }}/>
                     </div>
                     <div className='gallery-img-inner-item'>
-                        <img src={e6} alt="gallery-pics"/>
+                        <img src={e6} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(e6);
+                                }}/>
                     </div>
                     <div className='gallery-img-inner-item'>
-                        <img src={e7} alt="gallery-pics"/>
+                        <img src={e7} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(e7);
+                                }}/>
                     </div>
                     <div className='gallery-img-inner-item'>
-                        <img src={e8} alt="gallery-pics"/>
+                        <img src={e8} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(e8);
+                                }}/>
                     </div>
                     <div className='gallery-img-inner-item'>
-                        <img src={e9} alt="gallery-pics"/>
+                        <img src={e9} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(e9);
+                                }}/>
                     </div>
                     <div className='gallery-img-inner-item'>
-                        <img src={e10} alt="gallery-pics"/>
+                        <img src={e10} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(e10);
+                                }}/>
                     </div>
                     <div className='gallery-img-inner-item'>
-                        <img src={e11} alt="gallery-pics"/>
+                        <img src={e11} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(e11);
+                                }}/>
                     </div>
                     <div className='gallery-img-inner-item'>
-                        <img src={e12} alt="gallery-pics"/>
+                        <img src={e12} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(e12);
+                                }}/>
                     </div>
                     <div className='gallery-img-inner-item'>
-                        <img src={e13} alt="gallery-pics"/>
+                        <img src={e13} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(e13);
+                                }}/>
                     </div>
                     <div className='gallery-img-inner-item'>
-                        <img src={e14} alt="gallery-pics"/>
+                        <img src={e14} alt="gallery-pics" onClick={()=>{
+                                setOpen(true);
+                                setimages(e14);
+                                }}/>
                     </div>
                         </Masonry>
                     </ResponsiveMasonry>:
@@ -165,6 +228,15 @@ function Gallery(){
                 </div>
             </div>
             <Footer/>
+            <Backdrop 
+            sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+            open={open}
+            >
+            <div className='gallery-popup-page' > 
+            <p className='backdrop-gallery-x' onClick={()=>setOpen(false)}>X</p>
+                <img src={images} alt='e1'/>
+            </div>
+            </Backdrop>
         </>
     );
 }

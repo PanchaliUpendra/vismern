@@ -1,3 +1,4 @@
+const bcrypt = require('bcrypt');
 const userdatabase = require('./user.mongo');
 async function userregister(userdata){
     try{
@@ -15,4 +16,27 @@ async function userregister(userdata){
         }
     }
 }
-module.exports= userregister;
+async function userlogin(userdata){
+    const {uid,password}=userdata
+    try{
+        const user = await userdatabase.findOne({uid});
+        if(!user) return {success:false,message:'user not found'};
+        // Validate password
+        const validPassword = user.password===password;
+        if (!validPassword) return {success:false,message:'wrong password'};
+
+        console.log('User loggedin successfully');
+
+        return {success:true, message:'User Successfully logged'};
+    }catch(error){
+        console.error('Error while login the user: ',error);
+        return {
+            success:true,
+            message:'you got an error while user logging!!'
+        }
+    }
+}
+module.exports= {
+    userlogin,
+    userregister
+};

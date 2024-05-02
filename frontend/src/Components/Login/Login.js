@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { API_URL } from "../../Docs/data";
 import './Login.css';
+import { useNavigate } from "react-router-dom";
 
 function Login(){
+    const navigate = useNavigate();
     const[logindtls,setlogindtls] = useState({
         uid:'',
         password:''
@@ -20,6 +22,12 @@ function Login(){
             });
             const data = await response.json();
             console.log('response',data);
+            if(data.success){
+                localStorage.setItem('token',JSON.stringify(data));
+                navigate('/dashboard');
+            }
+            
+            
         }catch(err){
             console.log('you got an error while logging !!');
             alert('error while logging!!');

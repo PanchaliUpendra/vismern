@@ -1,3 +1,5 @@
+const jwt = require('jsonwebtoken');
+
 const bcrypt = require('bcrypt');
 const userdatabase = require('./user.mongo');
 async function userregister(userdata){
@@ -24,10 +26,15 @@ async function userlogin(userdata){
         // Validate password
         const validPassword = user.password===password;
         if (!validPassword) return {success:false,message:'wrong password'};
+        // Generate JWT token
+        const token = jwt.sign({ _id: user._id }, 'secret_key');
+        
+        // Set token as a cookie
+        // res.cookie('token', token, { httpOnly: true }).send('Logged in successfully');
 
         console.log('User loggedin successfully');
 
-        return {success:true, message:'User Successfully logged'};
+        return {token:token,success:true,uid:user.uid, message:'User Successfully logged'};
     }catch(error){
         console.error('Error while login the user: ',error);
         return {

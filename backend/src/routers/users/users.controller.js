@@ -1,9 +1,14 @@
+const cookieParser = require('cookie-parser');
+const express = require('express');
+const app=express();
+app.use(cookieParser());
 const {userregister,userlogin} = require('../../model/user.model/user.model');
 async function adduserregister(req,res){
     console.log('you requested with the post method');
     try{
         const result = await userregister(req.body);
         if(result.success){
+            
             return res.status(201).json(
                 {
                     success:true,
@@ -25,8 +30,12 @@ async function loginuser(req,res){
     try{
         const result = await userlogin(req.body);
         if(result.success){
+            // console.log('here is your token: ',result.token);
+            res.cookie('token', result.token, { httpOnly: true });
             return res.status(201).json(
                 {
+                    token:result.token,
+                    uid:result.uid,
                     success:true,
                     message:'user successfully loggedin'
                 }

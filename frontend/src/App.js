@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './App.css';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Home from './Components/Home/Home';
@@ -14,9 +14,12 @@ import Faq from './Components/FAQ/Faq';
 import Facilities from './Components/Facilities/Facilities';
 import Career from './Components/Career/Career';
 import Login from './Components/Login/Login';
+import MyContext from './MyContext';
+import Dashboard from './Components/Dashboard/Dashboard';
 
 
 function App() {
+  const sharedvalue  = useContext(MyContext);
   return (
     <BrowserRouter>
     <Navbar/>
@@ -32,7 +35,8 @@ function App() {
       <Route path='/facilities' element={<Facilities/>}/>
       <Route path='/*' element={<Error/>}/>
       <Route path='/careers' element={<Career/>}/>
-      <Route path='/login' element={<Login/>}/>
+      {sharedvalue.isAuthed===false && sharedvalue.uid==='' && <Route path='/login' element={<Login/>}/>}
+       <Route path='/dashboard' element={<Dashboard/>} />
     </Routes>
     </BrowserRouter>
   );
